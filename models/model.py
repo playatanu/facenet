@@ -22,7 +22,7 @@ class FaceNet():
             self.__load__(model)
            
     def __load__(self, model_path):
-        loaded_data = torch.load(model_path)
+        loaded_data = torch.load(model_path, weights_only=True)
         self.embedding_list = loaded_data[0]
         self.name_list = loaded_data[1]       
     
