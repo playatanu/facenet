@@ -1,10 +1,10 @@
+from models.inception_resnet_v1 import InceptionResnetV1
+from models.mtcnn import MTCNN
 import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from PIL import Image
 
-from models import MTCNN
-from models import InceptionResnetV1
 
 
 def collate_fn(x):
