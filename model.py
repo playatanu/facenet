@@ -3,8 +3,8 @@ from torch.utils.data import DataLoader
 from torchvision import datasets
 from PIL import Image
 
-from facenet_pytorch import InceptionResnetV1
-from facenet_pytorch import MTCNN
+from models import MTCNN
+from models import InceptionResnetV1
 
 
 def collate_fn(x):
